@@ -111,7 +111,7 @@ class TodoListViewController: UITableViewController {
         } else {
             request.predicate = categoryPredicate
         }
-         
+        
         do {
             itemArray = try context.fetch(request)
         } catch {
